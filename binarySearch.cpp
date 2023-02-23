@@ -7,7 +7,7 @@ int BinarySearch(int arr[], int n, int key)
     int end = n-1 ;
 
    // int mid = (start + end)/2;
-      int mid = start + (end + start)/2;   // Optimised Code (for being in INTERGER RANGE)
+      int mid = start + (end - start)/2;   // Optimised Code (for being in INTERGER RANGE)
 
     while(start <= end)
     {
@@ -25,7 +25,7 @@ int BinarySearch(int arr[], int n, int key)
         start = mid + 1;
         }
 
-        mid = start + (end + start)/2;
+        mid = start + (end - start)/2;
     }
     return -1 ;
 }
